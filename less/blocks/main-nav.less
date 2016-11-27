@@ -1,0 +1,24 @@
+.main-nav {
+	display: inline-block;
+
+	&__burger {
+		display: inline-block;
+		cursor: pointer;
+    	width: 28px;
+    	height: 20px;
+    	text-decoration: none;
+	}
+	&__burger span {
+		width: 28px;
+    	height: 4px;
+    	background-color: #ff7435;
+    	margin-bottom: 4px;
+    	display: block;
+	}
+	
+	@media screen and (max-width: 420px) {
+
+		&__list {display: none;}
+
+	}
+}

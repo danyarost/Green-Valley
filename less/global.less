@@ -1,0 +1,24 @@
+body {
+ 	min-width: 320px;
+ 	margin: 0;
+ 	padding: 0;
+ 	color: @text-color;
+ 	position: relative;
+}
+*{
+	box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6, p, ul, li, blockquote, figure {
+ 	margin: 0;
+ 	padding: 0;
+}
+
+.parent {
+	.make-row();
+
+	&__child {
+		.make-xs-column(6);
+		.make-sm-column(3);
+	}
+	&__child-2 {}
+}
