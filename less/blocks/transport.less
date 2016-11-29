@@ -1,0 +1,28 @@
+.transport {
+
+	&__list {
+		list-style: none;
+	}
+	&__item {
+		position: relative;
+	}
+	&__title {
+		font-family: @firasans;
+		font-size: 14px;
+		font-weight: normal;
+		padding-top: 50px;
+	}
+	&__title--ikon-bus:before {
+		content: '';
+		display: block;
+		position: absolute;
+		border-bottom: 2px solid black;
+		background: url(../../img/homeSpritesheet.png) -37px 30px;
+    	width: 50px;
+    	height: 25px;
+    	top: 9px;
+    	left: 0;
+    	right: 0;
+    	margin: auto;
+	}
+}

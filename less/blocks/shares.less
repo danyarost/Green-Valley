@@ -1,3 +1,58 @@
 .shares {
-	
+	padding: 25px 0 70px 0;
+	text-align: center;
+
+	&__title {
+		font-family: @ptserif;
+		font-size: 26px;
+		padding: 0 50px 40px 50px;
+		font-weight: normal;
+	}
+	&__slide {
+		background: url(../../img/shresSlide.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: left;
+	}
+	&__slide-info {
+		display: inline-block;
+		background-color: white;
+		width: 295px;
+		margin: 157px 23px 23px 0;
+		padding: 20px;
+	}
+	&__slide-title {
+		font-family: @firasans;
+		font-size: 18px;
+		color: @orange;
+	}
+	&__slide-text {
+		font-family: @firasans;
+		font-size: 16px;
+	}
+	&__slider {
+		position: relative;
+	}
+	&__slider:after {
+		content: '';
+		display: block;
+		position: absolute;
+		background-color: @orange;
+		width: 15px;
+		height: 15px;
+		border-radius: 7px;
+		left: 43%;
+		bottom: -35px;
+	}
+	&__slider:before {
+		content: '';
+		display: inline-block;
+		position: absolute;
+		border: 2px solid @orange;
+    	width: 12px;
+    	height: 12px;
+    	border-radius: 8px;
+    	bottom: -35px;
+    	right: 43%;
+	}
 }
