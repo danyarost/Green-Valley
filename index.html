@@ -154,31 +154,21 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1043.3817404989545!2d29.639441473423922!3d60.19195701968106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469655a8f3af85e1%3A0x73d49700f555aa7e!2z0J_RgNC40LzQvtGA0YHQutC-0LUg0YguLCA1OTgsIFVzaGtvdm8sIGcuIFNhbmt0LVBldGVyYnVyZywgMTk5MDA0!5e0!3m2!1sen!2sru!4v1447771316946" frameborder="0" style="border:0" allowfullscreen=""></iframe>
       </div>
       <div class="location__transport">
-        <ul class="transport__list">
-          <li class="transport__item">
-            <h3 class="transport__title transport__title--ikon-bus">АВТОБУСЫ</h3>
-            <ul class="transport__bus-list">
-              <li class="transport__bus-item">
-                <b>№211</b>от станции метро «Черная речка» до остановки «Санаторий Репино»
-              </li>
-              <li class="transport__bus-item">
-                <b>№205К</b>от станции метро «Старая деревня»
-              </li>
-              <li class="transport__bus-item">
-                <b>№680К</b>от станции метро «Проспект Просвещения»
-              </li>
-              <li class="transport__bus-item">
-                <b>№400К</b>от станции метро «Площадь Ленина»
-              </li>
-            </ul>
-          </li>
-          <li class="transport__item">
-            <h3 class="transport__title transport__title--ikon">ЭЛЕКТРОПОЕЗД</h3>
-            <ul class="transport__train-list">
-              <li class="transport__train-item">Электропоезд Выборгского направления от Финляндского вокзала Санкт-Петербурга до платформы «Репино»</li>
-            </ul>
-          </li>
-        </ul>
+        <div class="transport__bus">
+          <h3 class="transport__title transport__title--ikon-bus">АВТОБУСЫ</h3>
+          <div class="transport__text">
+            <b>№211</b>от станции метро «Черная речка» до остановки <br>«Санаторий Репино» <br>
+            <b>№205К</b>от станции метро «Старая деревня» <br>
+            <b>№680К</b>от станции метро «Проспект Просвещения» <br>
+            <b>№400К</b>от станции метро «Площадь Ленина» <br>
+          </div>
+        </div>
+        <div class="transport__electro">
+          <h3 class="transport__title transport__title--ikon-electro">ЭЛЕКТРОПОЕЗД</h3>
+          <div class="transport__text">
+            Электропоезд Выборгского направления от Финляндского вокзала Санкт-Петербурга до платформы «Репино»
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -186,42 +176,48 @@
   <section class="recommendations">
     <div class="recommendations__inner">
       <h2 class="recommendations__title">Где вы хотите отдохнуть?</h2>
-      <ul class="recommendations__list">
-        <li class="recommendations__item">
-          <a href="#" class="recommendations__item-inner">
-            <div class="recommendations__item-img"></div>
-            <div class="recommendations__item-info">
-              <span class="recommendations__item-name">В отеле</span>
-              <span class="recommendations__item-price">от <b>4000</b> руб./сутки</span>
-            </div>
-          </a>
-        </li>
-        <li class="recommendations__item">
-          <a href="#" class="recommendations__item-inner">
-            <div class="recommendations__item-img"></div>
-            <div class="recommendations__item-info">
-              <span class="recommendations__item-name">В коттедже</span>
-              <span class="recommendations__item-price">от <b>6800</b> руб./сутки</span>
-            </div>
-          </a>
-        </li>
-      </ul>
+      <div class="recommendations__item">
+        <a href="#" class="recommendations__item-inner">
+          <div class="recommendations__item-img">
+            <img src="img/recommendationsItem1.jpg" alt="inHotel">
+          </div>
+          <div class="recommendations__item-info">
+            <span class="recommendations__item-name">В отеле</span>
+            <span class="recommendations__item-price">от <b>4000</b> руб./сутки</span>
+          </div>
+        </a>
+      </div>
+      <div class="recommendations__item">
+        <a href="#" class="recommendations__item-inner">
+          <div class="recommendations__item-img">
+            <img src="img/recommendationsItem2.jpg" alt="inCottege">
+          </div>
+          <div class="recommendations__item-info">
+            <span class="recommendations__item-name">В коттедже</span>
+            <span class="recommendations__item-price">от <b>6800</b> руб./сутки</span>
+          </div>
+        </a>
+      </div>
     </div>
   </section>
 
   <footer class="page-footer">
     <div class="page-footer__inner">
-      <div class="page-footer__adsress">
+      <div class="page-footer__address">
         г. Санкт-Петербург 
         <br>Приморское ш.600
       </div>
-      <div class="page-footer__logo">
-        <a href="#" class="main-logo"><img src="#" alt=""></a>
-        <ul class="page-footer__social-links social-links">
-          <li class="social-links__item social-links__item--ikon1"><a href="#" class="social-links__link"></a></li>
-          <li class="social-links__item social-links__item--ikon2"><a href="#" class="social-links__link"></a></li>
-          <li class="social-links__item social-links__item--ikon3"><a href="#" class="social-links__link"></a></li>
-        </ul>
+      <div class="page-footer__main-logo">
+        <a href="#" class="main-logo">
+          <span class="main-logo__text">GREEN</span>
+          <img src="img/mainLogo.png" alt="">
+          <span class="main-logo__text">VALLEY</span>
+        </a>
+      </div>
+      <div class="page-footer__social-links">
+        <a href="#" class="social-links__link social-links__link--vk"></a>
+        <a href="#" class="social-links__link social-links__link--inst"></a>
+        <a href="#" class="social-links__link social-links__link--fb"></a>
       </div>
       <div class="page-footer__contacts">
         <a href="" class="page-footer__number">+7 812 77-55-88</a>

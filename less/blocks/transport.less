@@ -1,16 +1,17 @@
 .transport {
 
-	&__list {
-		list-style: none;
-	}
-	&__item {
+	&__bus {
 		position: relative;
+	}
+	&__electro {
+		position: relative;
+		margin-top: 40px;
 	}
 	&__title {
 		font-family: @firasans;
 		font-size: 14px;
 		font-weight: normal;
-		padding-top: 50px;
+		padding: 50px 0 20px 0;
 	}
 	&__title--ikon-bus:before {
 		content: '';
@@ -20,9 +21,26 @@
 		background: url(../../img/homeSpritesheet.png) -37px 30px;
     	width: 50px;
     	height: 25px;
-    	top: 9px;
+    	top: 5px;
     	left: 0;
     	right: 0;
     	margin: auto;
 	}
+	&__title--ikon-electro:before {
+		content: '';
+		display: block;
+		position: absolute;
+		border-bottom: 2px solid black;
+		background: url(../../img/homeSpritesheet.png) 64px -4px;
+    	width: 60px;
+    	height: 26px;
+    	top: 5px;
+    	left: 0;
+    	right: 0;
+    	margin: auto;
+	}
+	&__text {
+		padding: 0 57px;
+	}
+	
 }
