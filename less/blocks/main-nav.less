@@ -1,5 +1,4 @@
 .main-nav {
-	display: inline-block;
 
 	&__burger {
 		display: inline-block;
@@ -17,8 +16,25 @@
 	}
 	
 	@media screen and (max-width: 420px) {
-
-		&__list {display: none;}
+		
+		& ul {
+			list-style: none;
+		}
+		& li {
+			list-style: list-item;
+			text-align: center;
+			border-bottom: 1px solid #ebebeb;
+			border-left: 1px solid #ebebeb;
+			border-right: 1px solid #ebebeb;
+		}
+		& a {
+			display: inline-block;
+			padding: 19px 0;
+			text-decoration: none;
+			color: #000;
+			font-size: 14px;
+			font-family: @firasans;
+		}
 
 	}
 }

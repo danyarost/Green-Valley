@@ -7,45 +7,52 @@
   <title>Green Valley</title>
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700,700i|PT+Sans:400,400i,700,700i|PT+Serif:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <script src="js/jquery-migrate-1.4.1.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/script.js"></script>
 </head>
 <body>
+
   
   <header class="page-header">
     <div class="page-header__inner">
       <div class="page-header__main-logo">
         <a href="#" class="main-logo">
-          <span class="main-logo__text">GREEN</span>
+          <p class="main-logo__text main-logo__text--left">GREEN</p>
           <img src="img/mainLogo.png" alt="">
-          <span class="main-logo__text">VALLEY</span>
+          <p class="main-logo__text main-logo__text--right">VALLEY</p>
         </a>
       </div>
-      <div class="page-header__main-nav">
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="room_list.html">номера</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="">коттедж</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="">ресторан</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="">отдых</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="">контакты</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="page-header__burger">
+      <div class="page-header__burger" id="toggler-init">
         <a class="burger">
           <span></span>
           <span></span>
           <span></span>
         </a>
+      </div>
+      <div class="page-header__main-nav" id="toggler-item">
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="room_list.html">НОМЕРА</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="">КОТТЕДЖ</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="">РЕСТОРАН</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="">ОТДЫХ</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="">КОНТАКТЫ</a>
+            </li>
+          </ul>
+        </nav>
       </div>
       <div class="page-header__contacts">
         <a href="#" class="page-header__phone-link">+7 812 777-55-88</a>
@@ -54,6 +61,7 @@
       <div class="page-header__btn">
         <a href="#booking-form" class="btn btn--dispnone btn--bg-orange btn--ikon-calendar">ЗАБРОНИРОВАТЬ</a>
       </div>
+
     </div>
   </header>
 
@@ -82,7 +90,7 @@
 
   <section class="rest-options">
     <div class="rest-options__inner">
-      <h2 class="rest-options__title">Здоровый отдых</h2>
+      <h2 class="rest-options__title">Здоровый <br>отдых</h2>
       <p class="rest-options__description">Плавайте в бассейне, играйте в волейбол, футбол и другие игры. Устройте семейный пикник с шашлыками или снимите напряжение в бане или спа.</p>
       <ul class="rest-options__list">
         <li class="rest-options__item">
@@ -108,7 +116,7 @@
   </section>
 
   <div class="gallery">
-    <img src="../img/galleryPhoto.jpg" alt="galleryPhoto1">
+    <img src="/img/galleryPhoto.jpg" alt="galleryPhoto1">
   </div>
 
   <section class="reviews">
@@ -120,9 +128,7 @@
             <img src="img/reviewsPhoto.jpg" alt="photo1">
           </div>
           <span class="reviews__item-name">Екатерина В.</span>
-          <a href="#" class="reviews__social-link">
-            <img src="img/sprites/IC VK.jpg" alt="socialVK">
-          </a>
+          <a href="#" class="reviews__social-link"></a>
           <blockquote class="reviews__bq">Наша семья счастлива, что открыла для себя Green Valley. Замечательный, комфортный отдых. Хорошее место, приветливый персонал, вкусная еда. Стали постоянными гостями!</blockquote>
           <span class="reviews__item-date">Дата отдыха: <br> 01.06.2015 - 08.06.2015</span>
         </div>
@@ -157,16 +163,16 @@
         <div class="transport__bus">
           <h3 class="transport__title transport__title--ikon-bus">АВТОБУСЫ</h3>
           <div class="transport__text">
-            <b>№211</b>от станции метро «Черная речка» до остановки <br>«Санаторий Репино» <br>
-            <b>№205К</b>от станции метро «Старая деревня» <br>
-            <b>№680К</b>от станции метро «Проспект Просвещения» <br>
-            <b>№400К</b>от станции метро «Площадь Ленина» <br>
+            <p><b>№211</b> от станции метро «Черная речка» до остановки «Санаторий Репино»</p>
+            <p><b>№205К</b> от станции метро «Старая деревня»</p>
+            <p><b>№680К</b> от станции метро «Проспект Просвещения»</p>
+            <p><b>№400К</b> от станции метро «Площадь Ленина»</p>
           </div>
         </div>
         <div class="transport__electro">
           <h3 class="transport__title transport__title--ikon-electro">ЭЛЕКТРОПОЕЗД</h3>
           <div class="transport__text">
-            Электропоезд Выборгского направления от Финляндского вокзала Санкт-Петербурга до платформы «Репино»
+            <p>Электропоезд Выборгского направления от Финляндского вокзала Санкт-Петербурга до платформы «Репино»</p>
           </div>
         </div>
       </div>
@@ -209,9 +215,9 @@
       </div>
       <div class="page-footer__main-logo">
         <a href="#" class="main-logo">
-          <span class="main-logo__text">GREEN</span>
+          <span class="main-logo__text main-logo__text--left">GREEN</span>
           <img src="img/mainLogo.png" alt="">
-          <span class="main-logo__text">VALLEY</span>
+          <span class="main-logo__text main-logo__text--right">VALLEY</span>
         </a>
       </div>
       <div class="page-footer__social-links">
@@ -225,6 +231,26 @@
       </div>
     </div>
   </footer>
+
+  <div class="your-class">
+    <div><img src="img/recommendationsItem1.jpg" alt=""></div>
+    <div><img src="img/recommendationsItem2.jpg" alt=""></div>
+    <div><img src="img/recommendationsItem1.jpg" alt=""></div>
+  </div>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.your-class').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 3
+      });
+    });
+  </script>
 
 </body>
 </html>

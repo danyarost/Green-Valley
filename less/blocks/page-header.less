@@ -1,26 +1,21 @@
 .page-header {
   width: 100%;
-  padding: 15px 0 22px 0;
-  border: 1px solid #ebebeb;
+  margin: 0;
+  text-align: center; 
+  padding: 0;
 
   &__inner {
-    display: flex;
-    justify-content: center;
-	  align-items: center;
-	  padding-left: 20px;
-	  padding-right: 20px;
-    flex-wrap: wrap;
+    position: relative;
   }
   &__main-logo {
-    width: 66.66666667%;
-    margin-left: 16.66666667%;
-    display: inline-block;
-    text-align: center;
+    border: 1px solid #ebebeb;
+    padding: 15px 0 22px 0;
   }
   &__burger {
-    width: 16.66666667%;
-    text-align: right;
+    position: absolute;
     display: inline-block;
+    right: 22px;
+    top: 29px;
   }
   
 	@media screen and (max-width: 420px) {
