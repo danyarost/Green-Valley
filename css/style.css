@@ -136,10 +136,10 @@ figure {
   font-size: 16px;
   font-family: 'Fira Sans', sans-serif;
 }
-.center .slick-dots-rest-switcher li {
-  margin: 0 60px;
+.rest-switcher__slider .slick-dots-rest-switcher li {
+  margin: 0 65px;
 }
-.center .slick-dots-rest-switcher li button:before {
+.rest-switcher__slider .slick-dots-rest-switcher li button:before {
   content: 'СЕМЕЙНЫЙ ОТДЫХ';
   border: none;
   width: 160px;
@@ -149,14 +149,14 @@ figure {
   font-size: 15px;
   left: -67px;
 }
-.center .slick-dots-rest-switcher li.slick-active button:before {
+.rest-switcher__slider .slick-dots-rest-switcher li.slick-active button:before {
   border: none;
   color: #ff7435;
   background-color: white;
   font-family: 'Fira Sans', sans-serif;
   font-size: 15px;
 }
-.center .slick-dots-rest-switcher li.slick-active button:after {
+.rest-switcher__slider .slick-dots-rest-switcher li.slick-active button:after {
   content: '';
   display: block;
   position: absolute;
@@ -166,39 +166,8 @@ figure {
   top: 43px;
   left: 0;
 }
-.tabs {
-  padding: 20px 10px;
-  position: relative;
-  text-align: center;
-  width: 280px;
-  margin: auto;
-}
-.tabs__btn-left {
-  text-decoration: none;
-  color: #ff7435;
-  font-size: 15px;
-  font-family: 'Fira Sans', sans-serif;
-  float: left;
-}
-.tabs__btn-left:after {
-  content: '';
-  display: block;
-  position: absolute;
-  border-bottom: 2px solid #ff7435;
-  width: 30px;
-  height: 5px;
-  top: 43px;
-  left: 73px;
-}
-.tabs__btn-right {
-  text-decoration: none;
-  color: #838383;
-  font-size: 14px;
-  font-family: 'Fira Sans', sans-serif;
-  float: right;
-}
 .rest-options {
-  background: url(../../img/restPhoto.png);
+  background: url(../img/restPhoto.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0px -23px;
@@ -226,7 +195,7 @@ figure {
 }
 .reviews {
   margin: 25px 0 25px 0;
-  background: url(../../../img/reviewsBgr.jpg);
+  background: url(../img/reviewsBgr.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
@@ -301,7 +270,7 @@ figure {
   font-weight: normal;
 }
 .shares__slide {
-  background: url(../../img/shresSlide.png);
+  background: url(../img/shresSlide.png);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: left;
@@ -323,30 +292,31 @@ figure {
   font-family: 'Fira Sans', sans-serif;
   font-size: 16px;
 }
-.shares__slider {
+.shares__slider .slick-dots-rest-switcher li {
   position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 7px;
+  padding: 0;
+  cursor: pointer;
 }
-.shares__slider:after {
-  content: '';
-  display: block;
+.shares__slider .slick-dots-rest-switcher li button:before {
+  font-family: 'slick';
+  font-size: 15px;
+  line-height: 20px;
+  padding-top: 10px;
   position: absolute;
-  background-color: #ff7435;
+  top: 15;
+  left: 0;
   width: 15px;
   height: 15px;
-  border-radius: 7px;
-  left: 43%;
-  bottom: -35px;
-}
-.shares__slider:before {
   content: '';
-  display: inline-block;
-  position: absolute;
   border: 2px solid #ff7435;
-  width: 12px;
-  height: 12px;
   border-radius: 8px;
-  bottom: -35px;
-  right: 43%;
+}
+.shares__slider .slick-dots-rest-switcher li.slick-active button:before {
+  background-color: #ff7435;
 }
 .location {
   padding-top: 35px;
@@ -386,7 +356,7 @@ figure {
   display: block;
   position: absolute;
   border-bottom: 2px solid black;
-  background: url(../../img/homeSpritesheet.png) -37px 30px;
+  background: url(../img/homeSpritesheet.png) -37px 30px;
   width: 50px;
   height: 25px;
   top: 5px;
@@ -399,7 +369,7 @@ figure {
   display: block;
   position: absolute;
   border-bottom: 2px solid black;
-  background: url(../../img/homeSpritesheet.png) 64px -4px;
+  background: url(../img/homeSpritesheet.png) 64px -4px;
   width: 60px;
   height: 26px;
   top: 5px;
@@ -413,7 +383,7 @@ figure {
   font-size: 16px;
 }
 .recommendations {
-  background: url(../../img/recommendationBgr.png);
+  background: url(../img/recommendationBgr.png);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -480,21 +450,21 @@ figure {
 }
 .social-links__link--vk {
   display: inline-block;
-  background: url(../../img/homeSpritesheet.png) -5px -8px;
+  background: url(../img/homeSpritesheet.png) -5px -8px;
   background-repeat: no-repeat;
   width: 25px;
   height: 15px;
 }
 .social-links__link--inst {
   display: inline-block;
-  background: url(../../img/homeSpritesheet.png) -66px -5px;
+  background: url(../img/homeSpritesheet.png) -66px -5px;
   background-repeat: no-repeat;
   width: 21px;
   height: 21px;
 }
 .social-links__link--fb {
   display: inline-block;
-  background: url(../../img/homeSpritesheet.png) -127px -4px;
+  background: url(../img/homeSpritesheet.png) -127px -4px;
   background-repeat: no-repeat;
   width: 23px;
   height: 23px;

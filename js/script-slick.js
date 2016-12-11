@@ -1,11 +1,11 @@
 $(document).on('ready', function() {
-      $(".regular").slick({
+      $(".rest-switcher__slider").slick({
         dots: true,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1
       });
-      $(".center").slick({
+      $(".shares__slider").slick({
         dots: true,
         infinite: true,
         slidesToShow: 1,
