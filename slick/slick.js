@@ -44,15 +44,17 @@
                 appendDots: $(element),
                 arrows: true,
                 asNavFor: null,
-                prevArrow: '<button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0" role="button">Previous</button>',
-                nextArrow: '<button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button">Next</button>',
+                // prevArrow: '<button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0" role="button">Previous</button>',
+                // nextArrow: '<button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button">Next</button>',
                 autoplay: false,
                 autoplaySpeed: 3000,
                 centerMode: false,
                 centerPadding: '50px',
                 cssEase: 'ease',
-                customPaging: function(slider, i) {
-                    return $('<button type="button" data-role="none" role="button" tabindex="0" />').text(i + 1);
+                customPaging: function(slider, i) { 
+                    var btns = ['СЕМЕЙНЫЙ ОТДЫХ', 'КОРПОРАТИВНЫЙ'];
+                    // var btn2 = 'КОРПОРАТИВНЫЙ';
+                    return $('<span class="slick-btn"></span>').text( btns[0] );
                 },
                 dots: false,
                 dotsClass: 'slick-dots slick-dots-rest-switcher',
@@ -76,7 +78,7 @@
                 slidesPerRow: 1,
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                speed: 500,
+                speed: 400,
                 swipe: true,
                 swipeToSlide: false,
                 touchMove: true,

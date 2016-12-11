@@ -26,6 +26,12 @@ figure {
   margin: 0;
   padding: 0;
 }
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
 .parent {
   margin-left: -15px;
   margin-right: -15px;
@@ -136,9 +142,6 @@ figure {
   font-size: 16px;
   font-family: 'Fira Sans', sans-serif;
 }
-.rest-switcher__slider .slick-dots-rest-switcher li {
-  margin: 0 65px;
-}
 .rest-switcher__slider .slick-dots-rest-switcher li button:before {
   content: 'СЕМЕЙНЫЙ ОТДЫХ';
   border: none;
@@ -165,6 +168,13 @@ figure {
   height: 5px;
   top: 43px;
   left: 0;
+}
+.rest-switcher .slick-btn {
+  color: #838383;
+  display: inline-block;
+}
+.slick-prev {
+  background-color: #ff7435;
 }
 .rest-options {
   background: url(../img/restPhoto.png);
@@ -282,6 +292,7 @@ figure {
   width: 295px;
   margin: 157px 23px 23px 0;
   padding: 20px;
+  opacity: 0.9;
 }
 .shares__slide-title {
   font-family: 'Fira Sans', sans-serif;
@@ -291,32 +302,6 @@ figure {
 .shares__slide-text {
   font-family: 'Fira Sans', sans-serif;
   font-size: 16px;
-}
-.shares__slider .slick-dots-rest-switcher li {
-  position: relative;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin: 0 7px;
-  padding: 0;
-  cursor: pointer;
-}
-.shares__slider .slick-dots-rest-switcher li button:before {
-  font-family: 'slick';
-  font-size: 15px;
-  line-height: 20px;
-  padding-top: 10px;
-  position: absolute;
-  top: 15;
-  left: 0;
-  width: 15px;
-  height: 15px;
-  content: '';
-  border: 2px solid #ff7435;
-  border-radius: 8px;
-}
-.shares__slider .slick-dots-rest-switcher li.slick-active button:before {
-  background-color: #ff7435;
 }
 .location {
   padding-top: 35px;
@@ -438,6 +423,7 @@ figure {
 .page-footer {
   text-align: center;
   padding: 30px 0 22px 0;
+  border-top: 1px solid #ebebeb;
 }
 .page-footer__social-links {
   display: -ms-flexbox;
@@ -468,6 +454,90 @@ figure {
   background-repeat: no-repeat;
   width: 23px;
   height: 23px;
+}
+.promo {
+  background: url(../img/roomList/promoBgr.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.promo__title {
+  font-family: 'PT serif', serif;
+  color: #fff;
+  font-size: 30px;
+  padding: 65px 20px;
+}
+.promo__text {
+  display: none;
+}
+.room-catalog {
+  text-align: center;
+}
+.room-catalog__title {
+  font-family: 'PT serif', serif;
+  font-size: 30px;
+  padding: 50px 10px 40px 10px;
+}
+.room-catalog__item {
+  background-color: #fafafa;
+  border: 1px solid #ebebeb;
+  margin-bottom: 50px;
+}
+.catalog-item {
+  background-color: #fafafa;
+  border: 1px solid #ebebeb;
+}
+.catalog-item__inner {
+  text-align: center;
+  padding-bottom: 33px;
+}
+.catalog-item__title {
+  font-family: 'PT serif', serif;
+  font-size: 26px;
+  padding: 35px 0 5px 0;
+}
+.catalog-item__price {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 14px;
+  padding-bottom: 30px;
+}
+.catalog-item__price b {
+  font-size: 18px;
+  color: #ff7435;
+}
+.catalog-item__img {
+  padding-top: 30px;
+}
+.catalog-item__img img {
+  width: 100%;
+}
+.catalog-item__text {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
+  padding: 40px 20px 35px 20px;
+  text-align: left;
+}
+.catalog-item__btn-order {
+  background-color: #ff7435;
+  padding: 13px 30px 13px 30px;
+  border-radius: 22px;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  width: 180px;
+  margin: 0 20px;
+}
+.catalog-item__btn-order:hover {
+  background-color: #e85715;
+}
+.catalog-item__btn-more-info {
+  display: inline-block;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 14px;
+  color: #000;
+  border-bottom: 1px dashed #000;
+  margin: 0 20px;
+  padding-top: 20px;
 }
 @media (min-width: 768px) {
   .parent__child {

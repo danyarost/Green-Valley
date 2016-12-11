@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Green Valley</title>
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700,700i|PT+Sans:400,400i,700,700i|PT+Serif:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="./slick/slick.css">
-  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="./slick.css">
+  <!-- <link rel="stylesheet" type="text/css" href="./slick-theme.css"> -->
   <link rel="stylesheet" href="css/style.css">
   <script src="js/jquery-3.1.0.min.js"></script>
   <script src="js/jquery-migrate-1.4.1.min.js"></script>
@@ -67,10 +67,10 @@
 
   <section class="promo">
     <div class="promo__inner">
-      <h2 class="promo__title">Номера в отеле Green Valley</h2>
+      <h1 class="promo__title">Номера в отеле Green Valley</h1>
       <p class="promo__text">
-      Комфорт и живописный вид на Финский залив и сосновый парк.
-      <br>4 этажа | 70 номеров
+      Комфорт и живописный вид на Финский залив и сосновый парк.</p>
+      <p class="promo__text">4 этажа | 70 номеров</p>
       </p>
     </div>
   </section>
@@ -80,56 +80,56 @@
       <h2 class="room-catalog__title">Категории</h2>
       <div class="room-catalog__list">
 
-        <div class="room-catalog__item catalog-item">
-          <div class="catalog-item__info">
+        <div class="room-catalog__item">
+          <div class="catalog-item__inner">
             <h3 class="catalog-item__title">Эконом</h3>
             <span class="catalog-item__price">от <b>3400</b> руб./сутки</span>
-            <p class="catalog-item__text">В отеле 30 таких номеров площадью от 16 до 20 кв.м. 
-            <br>Рассчитаны на проживание 1-2 человек. 
-            <br>Часть номеров с видом на Финский залив. </p>
-            <a href="#booking-form" class="btn btn--bg-orange btn--ikon-calendar">ЗАБРОНИРОВАТЬ</a>
-            <a href="single_room.html" class="catalog-item__btn-more-info">Подробнее</a>
+            <div class="catalog-item__img">
+              <img src="img/roomList/catalog-item__eco.png" alt="">
+            </div>
+            <p class="catalog-item__text">В отеле 30 таких номеров площадью от 16 до 20 кв.м. Рассчитаны на проживание 1-2 человек. Часть номеров с видом на Финский залив. </p>
+            <a href="#booking-form" class="catalog-item__btn-order btn--bg-orange btn--ikon-calendar">ЗАБРОНИРОВАТЬ</a>
+            <a href="single_room.html" class="catalog-item__btn-more-info">подробнее</a>
           </div>
-          <div class="catalog-item__img"><img src="#" alt=""></div>
         </div>
 
-        <div class="room-catalog__item catalog-item">
-          <div class="catalog-item__info">
+        <div class="room-catalog__item">
+          <div class="catalog-item__inner">
             <h3 class="catalog-item__title">Стандарт</h3>
             <span class="catalog-item__price">от <b>4000</b> руб./сутки</span>
-            <p class="catalog-item__text">В отеле 20 таких номеров. Рассчитаны на
-            <br>проживание 2-3 человек. Площадь номера 20-25 
-            <br>кв.м., состоит из гостевой и спальной зоны.</p>
-            <a href="#booking-form" class="btn btn--bg-orange btn--ikon-calendar">ЗАБРОНИРОВАТЬ</a>
-            <a href="#" class="catalog-item__btn-more-info">Подробнее</a>
+            <div class="catalog-item__img">
+              <img src="img/roomList/catalog-item__st.png" alt="">
+            </div>
+            <p class="catalog-item__text">В отеле 20 таких номеров. Рассчитаны на проживание 2-3 человек. Площадь номера 20-25  кв.м., состоит из гостевой и спальной зоны.</p>
+            <a href="#booking-form" class="catalog-item__btn-order btn--bg-orange btn--ikon-calendar">ЗАБРОНИРОВАТЬ</a>
+            <a href="#" class="catalog-item__btn-more-info">подробнее</a>
           </div>
-          <div class="catalog-item__img"><img src="#" alt=""></div>
         </div>
 
-        <div class="room-catalog__item catalog-item">
-          <div class="catalog-item__info">
+        <div class="room-catalog__item">
+          <div class="catalog-item__inner">
             <h3 class="catalog-item__title">Стандарт+</h3>
             <span class="catalog-item__price">от <b>4500</b> руб./сутки</span>
-            <p class="catalog-item__text">В отеле 15 таких номеров. 2-комнатный номер
-            <br>предназначен для проживания 2-4 человек. 
-            <br>Площадь номера от 35 кв.м.</p>
-            <a href="#booking-form" class="btn btn--bg-orange btn--ikon-calendar">ЗАБРОНИРОВАТЬ</a>
-            <a href="#" class="catalog-item__btn-more-info">Подробнее</a>
+            <div class="catalog-item__img">
+              <img src="img/roomList/catalog-item__st-plus.png" alt="">
+            </div>
+            <p class="catalog-item__text">В отеле 15 таких номеров. 2-комнатный номер предназначен для проживания 2-4 человек.  Площадь номера от 35 кв.м.</p>
+            <a href="#booking-form" class="catalog-item__btn-order btn--bg-orange btn--ikon-calendar">ЗАБРОНИРОВАТЬ</a>
+            <a href="#" class="catalog-item__btn-more-info">подробнее</a>
           </div>
-          <div class="catalog-item__img"><img src="#" alt=""></div>
         </div>
 
-        <div class="room-catalog__item catalog-item">
-          <div class="catalog-item__info">
+        <div class="room-catalog__item">
+          <div class="catalog-item__inner">
             <h3 class="catalog-item__title">Люкс</h3>
             <span class="catalog-item__price">от <b>3400</b> руб./сутки</span>
-            <p class="catalog-item__text">В отеле 5 таких номера. Просторные номера
-            <br>площадью до 40 кв.м. с видом на Финский залив,
-            <br>выполнен в оригинальном cтиле<span class=""></span></p>
-            <a href="#booking-form" class="btn btn--bg-orange btn--ikon-calendar">ЗАБРОНИРОВАТЬ</a>
-            <a href="#" class="catalog-item__btn-more-info">Подробнее</a>
+            <div class="catalog-item__img">
+              <img src="img/roomList/catalog-item__lux.png" alt="">
+            </div>
+            <p class="catalog-item__text">В отеле 5 таких номера. Просторные номера площадью до 40 кв.м. с видом на Финский залив, выполнен в оригинальном cтиле<span class=""></span></p>
+            <a href="#booking-form" class="catalog-item__btn-order btn--bg-orange btn--ikon-calendar">ЗАБРОНИРОВАТЬ</a>
+            <a href="#" class="catalog-item__btn-more-info">подробнее</a>
           </div>
-          <div class="catalog-item__img"><img src="#" alt=""></div>
         </div>
 
       </div>
