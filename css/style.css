@@ -136,6 +136,36 @@ figure {
   font-size: 16px;
   font-family: 'Fira Sans', sans-serif;
 }
+.center .slick-dots-rest-switcher li {
+  margin: 0 60px;
+}
+.center .slick-dots-rest-switcher li button:before {
+  content: 'СЕМЕЙНЫЙ ОТДЫХ';
+  border: none;
+  width: 160px;
+  color: #838383;
+  background-color: white;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 15px;
+  left: -67px;
+}
+.center .slick-dots-rest-switcher li.slick-active button:before {
+  border: none;
+  color: #ff7435;
+  background-color: white;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 15px;
+}
+.center .slick-dots-rest-switcher li.slick-active button:after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-bottom: 2px solid #ff7435;
+  width: 30px;
+  height: 5px;
+  top: 43px;
+  left: 0;
+}
 .tabs {
   padding: 20px 10px;
   position: relative;
@@ -150,7 +180,7 @@ figure {
   font-family: 'Fira Sans', sans-serif;
   float: left;
 }
-.tabs__btn-left:before {
+.tabs__btn-left:after {
   content: '';
   display: block;
   position: absolute;
@@ -261,7 +291,7 @@ figure {
   border-radius: 18px;
 }
 .shares {
-  padding: 25px 0 70px 0;
+  padding: 25px 0 0 0;
   text-align: center;
 }
 .shares__title {
@@ -275,6 +305,7 @@ figure {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: left;
+  width: 100%;
 }
 .shares__slide-info {
   display: inline-block;

@@ -37,3 +37,38 @@
 		font-family: @firasans;
 	}
 }
+
+.center .slick-dots-rest-switcher li {
+	margin: 0 60px;
+}
+
+.center .slick-dots-rest-switcher li button:before {
+	content: 'СЕМЕЙНЫЙ ОТДЫХ';
+    border: none;
+    width: 160px;
+    color: @grey;
+    background-color: white;
+    font-family: @firasans;
+    font-size: 15px;
+    left: -67px;
+	
+}
+
+.center .slick-dots-rest-switcher li.slick-active button:before {
+	border: none;
+    color: @orange;
+    background-color: white;
+    font-family: @firasans;
+    font-size: 15px;
+}
+
+.center .slick-dots-rest-switcher li.slick-active button:after {
+	content: '';
+	display: block;
+	position: absolute;
+	border-bottom: 2px solid @orange;
+	width: 30px;
+   	height: 5px;
+   	top: 43px;
+   	left: 0;
+}

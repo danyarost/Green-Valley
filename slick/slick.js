@@ -55,7 +55,7 @@
                     return $('<button type="button" data-role="none" role="button" tabindex="0" />').text(i + 1);
                 },
                 dots: false,
-                dotsClass: 'slick-dots',
+                dotsClass: 'slick-dots slick-dots-rest-switcher',
                 draggable: true,
                 easing: 'linear',
                 edgeFriction: 0.35,

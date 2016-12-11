@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Green Valley</title>
-  <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700,700i|PT+Sans:400,400i,700,700i|PT+Serif:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+  <link rel="stylesheet" href="css/style.css">
   <script src="js/jquery-3.1.0.min.js"></script>
   <script src="js/jquery-migrate-1.4.1.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/script-toggler.js"></script>
+  <script src="js/script-slick.js"></script>
 </head>
 <body>
 
@@ -40,7 +41,7 @@
               <a class="main-nav__link" href="room_list.html">НОМЕРА</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="">КОТТЕДЖ</a>
+              <a class="main-nav__link" href="slick.html">КОТТЕДЖ</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="">РЕСТОРАН</a>
@@ -67,23 +68,19 @@
 
   <div class="rest-switcher">
     <div class="rest-switcher__inner">
-      <section id="rest-family" class="rest-switcher__item-family 
-      rest-switcher__item-family--active">
-        <div class="rest-switcher__item-inner">
-          <h2 class="rest-switcher__item-title">Семейный отдых на  берегу Финского залива</h2>
-          <p class="rest-switcher__text">Green Valley - это современная база отдыха в курортном районе для здорового отдыха всей семёй.</p>
-        </div>
-      </section>
-      <section id="rest-company" class="rest-switcher__item-company">
-        <div class="rest-switcher__item-inner">
-          <h2 class="rest-switcher__item-title">Корпоративный отдых на  берегу Финского залива</h2>
-          <p class="rest-switcher__text">Green Valley - это современная база отдыха в курортном районе для здорового отдыха всем коллективом</p>
-        </div>
-      </section>
-
-      <div class="rest-switcher__tabs tabs">
-        <a class="tabs__btn-left" href="#rest-family">СЕМЕЙНЫЙ ОТДЫХ</a>
-        <a class="tabs__btn-right" href="#rest-company">КОРПОРАТИВНЫЙ</a>
+      <div class="center slider">
+        <section class="rest-switcher__item-family">
+            <div class="rest-switcher__item-inner">
+              <h2 class="rest-switcher__item-title">Семейный отдых на  берегу Финского залива</h2>
+              <p class="rest-switcher__text">Green Valley - это современная база отдыха в курортном районе для здорового отдыха всей семёй.</p>
+            </div>
+        </section>
+        <section class="rest-switcher__item-company">
+          <div class="rest-switcher__item-inner">
+              <h2 class="rest-switcher__item-title">Корпоративный отдых на  берегу Финского залива</h2>
+              <p class="rest-switcher__text">Green Valley - это современная база отдыха в курортном районе для здорового отдыха всем коллективом</p>
+          </div>
+        </section>
       </div>
     </div>
   </div>
@@ -142,7 +139,13 @@
   <section class="shares">
     <div class="shares__inner">
       <h2 class="shares__title">Акции <br> и предложения</h2>
-      <div class="shares__slider">
+      <div class="regular slider">
+        <div class="shares__slide">
+          <div class="shares__slide-info">
+            <h3 class="shares__slide-title">СКИДКИ В МАЕ</h3>
+            <p class="shares__slide-text">Забронируйте номер или коттедж любой категории до 31 июня и получите скидку 10% !</p>
+          </div>
+        </div>
         <div class="shares__slide">
           <div class="shares__slide-info">
             <h3 class="shares__slide-title">СКИДКИ В МАЕ</h3>
@@ -232,25 +235,10 @@
     </div>
   </footer>
 
-  <div class="your-class">
-    <div><img src="img/recommendationsItem1.jpg" alt=""></div>
-    <div><img src="img/recommendationsItem2.jpg" alt=""></div>
-    <div><img src="img/recommendationsItem1.jpg" alt=""></div>
-  </div>
 
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
-
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.your-class').slick({
-      infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 3
-      });
-    });
-  </script>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/script-slick.js"></script>
 
 </body>
 </html>
