@@ -4,18 +4,25 @@
 		display: flex;
 		flex-direction: column;
 	}
-	&__item-family {
+	&__item--family {
 		background: url(../img/bannerPhoto.jpg);
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: bottom;
 	}
-	&__item-company {
+	&__item--company {
 		background: url(../img/bannerPhoto.jpg);
+		display: none;
+	}
+	&__item {
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: bottom;
 		display: none;
+		opacity: 0;
+		transition: 1s;
+	}
+	&__item.is-active {
+		display: block;
+		opacity: 1;
+		transition: 1s
 	}
 	&__item-title {
 		font-weight: 600;
@@ -36,42 +43,33 @@
 		font-size: 16px;
 		font-family: @firasans;
 	}
-	&__slider .slick-dots-rest-switcher li {
-		// margin: 0 65px;
+	&__tab-box {
+		padding-top: 20px;
+		text-align: center;
 	}
-	&__slider .slick-dots-rest-switcher li button:before {
-		content: 'СЕМЕЙНЫЙ ОТДЫХ';
-    	border: none;
-    	width: 160px;
-    	color: @grey;
-    	background-color: white;
-    	font-family: @firasans;
-    	font-size: 15px;
-    	left: -67px;
-	}
-	&__slider .slick-dots-rest-switcher li.slick-active button:before {
-		border: none;
-    	color: @orange;
-    	background-color: white;
-    	font-family: @firasans;
-    	font-size: 15px;
-	}
-	&__slider .slick-dots-rest-switcher li.slick-active button:after {
-		content: '';
-		display: block;
-		position: absolute;
-		border-bottom: 2px solid @orange;
-		width: 30px;
-   		height: 5px;
-   		top: 43px;
-   		left: 0;
-	}
-	& .slick-btn {
-		color: @grey;
+	&__tab-item {
 		display: inline-block;
+		color: @grey;
+		font-size: 14px;
+		font-family: @firasans;
+		padding: 0 7px;
+		position: relative;
 	}
-}
-
-.slick-prev {
-	background-color: @orange;
+	&__tab-item:before {
+		content: '';
+		display: none;
+		position: absolute;
+		border-bottom: 2px solid #ff7435;
+    	width: 30px;
+    	height: 1px;
+    	left: 50px;
+    	top: 25px;
+	}
+	&__tab-item.is-active:before {
+		display: block;
+	}
+	&__tab-item.is-active{
+		color: @orange;
+		transition: 0.3s;
+	}
 }

@@ -2,31 +2,66 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Green Valley</title>
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700,700i|PT+Sans:400,400i,700,700i|PT+Serif:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./slick.css">
+  <!-- <link rel="stylesheet" type="text/css" href="./slick-theme.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <script src="js/jquery-migrate-1.4.1.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/script-toggler.js"></script>
+  <script src="js/script-slick.js"></script>
 </head>
 <body>
   
   <header class="page-header">
     <div class="page-header__inner">
-      <a href="#" class="main-logo"><img src="#" alt=""></a>
-      <div class="main-nav">
-        <nav class="main-nav__nav">
+      <div class="page-header__main-logo">
+        <a href="index.html" class="main-logo">
+          <p class="main-logo__text main-logo__text--left">GREEN</p>
+          <img src="img/mainLogo.png" alt="">
+          <p class="main-logo__text main-logo__text--right">VALLEY</p>
+        </a>
+      </div>
+      <div class="page-header__burger" id="toggler-init">
+        <a class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+      <div class="page-header__main-nav" id="toggler-item">
+        <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item  main-nav__item--active"><a class="main-nav__link" href="">номера</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="">коттедж</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="">ресторан</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="">отдых</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="">контакты</a></li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="room_list.html">НОМЕРА</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="">КОТТЕДЖ</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="">РЕСТОРАН</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="">ОТДЫХ</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="">КОНТАКТЫ</a>
+            </li>
           </ul>
         </nav>
-        <span class="main-nav__toggler"></span>
       </div>
-
       <div class="page-header__contacts">
         <a href="#" class="page-header__phone-link">+7 812 777-55-88</a>
-        <div class="page-header__address">г. Санкт-Петербург, Приморское ш.600</div>
+        <span class="page-header__address">г. Санкт-Петербург, Приморское ш.600</span>
       </div>
-      <a href="#booking-form" class="btn btn--bg-orange btn--ikon-calendar">ЗАБРОНИРОВАТЬ</a>
+      <div class="page-header__btn">
+        <a href="#form" class="btn btn--dispnone btn--bg-orange btn--ikon-calendar">ЗАБРОНИРОВАТЬ</a>
+      </div>
+
     </div>
   </header>
 
@@ -79,21 +114,25 @@
 
   <footer class="page-footer">
     <div class="page-footer__inner">
-      <div class="page-footer__adsress">
+      <div class="page-footer__address">
         г. Санкт-Петербург 
         <br>Приморское ш.600
       </div>
-      <div class="page-footer__logo">
-        <a href="#" class="main-logo"><img src="#" alt=""></a>
-        <ul class="page-footer__social-links social-links">
-          <li class="social-links__item"><a href="#" class="social-links__link"></a></li>
-          <li class="social-links__item"><a href="#" class="social-links__link"></a></li>
-          <li class="social-links__item"><a href="#" class="social-links__link"></a></li>
-        </ul>
+      <div class="page-footer__main-logo">
+        <a href="index.html" class="main-logo">
+          <span class="main-logo__text main-logo__text--left">GREEN</span>
+          <img src="img/mainLogo.png" alt="">
+          <span class="main-logo__text main-logo__text--right">VALLEY</span>
+        </a>
+      </div>
+      <div class="page-footer__social-links">
+        <a href="#" class="social-links__link social-links__link--vk"></a>
+        <a href="#" class="social-links__link social-links__link--inst"></a>
+        <a href="#" class="social-links__link social-links__link--fb"></a>
       </div>
       <div class="page-footer__contacts">
-        +7 812 77-55-88
-        <br>info@greenvalue.ru
+        <a href="" class="page-footer__number">+7 812 77-55-88</a>
+        info@greenvalue.ru
       </div>
     </div>
   </footer>

@@ -1,10 +1,10 @@
 $(document).on('ready', function() {
-      $(".rest-switcher__slider").slick({
-        dots: true,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1
-      });
+      // $(".rest-switcher__slider").slick({
+      //   dots: true,
+      //   infinite: true,
+      //   slidesToShow: 1,
+      //   slidesToScroll: 1
+      // });
       $(".shares__slider").slick({
         dots: true,
         infinite: true,
@@ -17,3 +17,4 @@ $(document).on('ready', function() {
         variableWidth: true
       });
 });
+

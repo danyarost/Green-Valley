@@ -54,7 +54,8 @@
                 customPaging: function(slider, i) { 
                     var btns = ['СЕМЕЙНЫЙ ОТДЫХ', 'КОРПОРАТИВНЫЙ'];
                     // var btn2 = 'КОРПОРАТИВНЫЙ';
-                    return $('<span class="slick-btn"></span>').text( btns[0] );
+                    return $('<span class="slick-btn"></span>').
+                    text('');
                 },
                 dots: false,
                 dotsClass: 'slick-dots slick-dots-rest-switcher',

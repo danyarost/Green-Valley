@@ -26,11 +26,16 @@ figure {
   margin: 0;
   padding: 0;
 }
+a {
+  color: #000;
+}
 a:hover {
   text-decoration: none;
+  color: #838383;
 }
 a:active {
   text-decoration: none;
+  color: #838383;
 }
 .parent {
   margin-left: -15px;
@@ -110,18 +115,25 @@ a:active {
   -ms-flex-direction: column;
       flex-direction: column;
 }
-.rest-switcher__item-family {
+.rest-switcher__item--family {
   background: url(../img/bannerPhoto.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
 }
-.rest-switcher__item-company {
+.rest-switcher__item--company {
   background: url(../img/bannerPhoto.jpg);
+  display: none;
+}
+.rest-switcher__item {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
   display: none;
+  opacity: 0;
+  transition: 1s;
+}
+.rest-switcher__item.is-active {
+  display: block;
+  opacity: 1;
+  transition: 1s;
 }
 .rest-switcher__item-title {
   font-weight: 600;
@@ -142,39 +154,34 @@ a:active {
   font-size: 16px;
   font-family: 'Fira Sans', sans-serif;
 }
-.rest-switcher__slider .slick-dots-rest-switcher li button:before {
-  content: 'СЕМЕЙНЫЙ ОТДЫХ';
-  border: none;
-  width: 160px;
+.rest-switcher__tab-box {
+  padding-top: 20px;
+  text-align: center;
+}
+.rest-switcher__tab-item {
+  display: inline-block;
   color: #838383;
-  background-color: white;
+  font-size: 14px;
   font-family: 'Fira Sans', sans-serif;
-  font-size: 15px;
-  left: -67px;
+  padding: 0 7px;
+  position: relative;
 }
-.rest-switcher__slider .slick-dots-rest-switcher li.slick-active button:before {
-  border: none;
-  color: #ff7435;
-  background-color: white;
-  font-family: 'Fira Sans', sans-serif;
-  font-size: 15px;
-}
-.rest-switcher__slider .slick-dots-rest-switcher li.slick-active button:after {
+.rest-switcher__tab-item:before {
   content: '';
-  display: block;
+  display: none;
   position: absolute;
   border-bottom: 2px solid #ff7435;
   width: 30px;
-  height: 5px;
-  top: 43px;
-  left: 0;
+  height: 1px;
+  left: 50px;
+  top: 25px;
 }
-.rest-switcher .slick-btn {
-  color: #838383;
-  display: inline-block;
+.rest-switcher__tab-item.is-active:before {
+  display: block;
 }
-.slick-prev {
-  background-color: #ff7435;
+.rest-switcher__tab-item.is-active {
+  color: #ff7435;
+  transition: 0.3s;
 }
 .rest-options {
   background: url(../img/restPhoto.png);
@@ -302,6 +309,36 @@ a:active {
 .shares__slide-text {
   font-family: 'Fira Sans', sans-serif;
   font-size: 16px;
+}
+.shares__slider .slick-dots li {
+  display: inline-block;
+  padding-top: 20px;
+}
+.shares__slider .slick-dots .slick-btn {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 7px;
+  padding: 0;
+  cursor: pointer;
+}
+.shares__slider .slick-dots .slick-btn:before {
+  font-family: 'slick';
+  font-size: 15px;
+  line-height: 20px;
+  padding-top: 10px;
+  position: absolute;
+  top: 15;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  content: '';
+  border: 2px solid #ff7435;
+  border-radius: 8px;
+}
+.shares__slider .slick-dots li.slick-active span:before {
+  background-color: #ff7435;
 }
 .location {
   padding-top: 35px;
@@ -539,6 +576,131 @@ a:active {
   margin: 0 20px;
   padding-top: 20px;
 }
+.room-about {
+  text-align: center;
+  padding-bottom: 45px;
+}
+.room-about__title {
+  font-family: 'PT serif', serif;
+  font-size: 30px;
+  padding-top: 50px;
+}
+.room-about__price {
+  font-family: 'PT serif', serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+.room-about__price b {
+  font-size: 18px;
+  color: #ff7435;
+}
+.room-about__slider {
+  padding-top: 30px;
+}
+.room-about__slider img {
+  width: 100%;
+}
+.room-about__description-room {
+  padding-top: 50px;
+}
+.room-about__booking {
+  padding-top: 44px;
+}
+.room-about__btn {
+  background-color: #ff7435;
+  padding: 13px 30px 13px 41px;
+  border-radius: 22px;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  width: 180px;
+  margin: 0 20px;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 14px;
+  position: relative;
+}
+.room-about__btn:before {
+  content: '';
+  display: block;
+  position: absolute;
+  background: url(../img/IC_Calendar.png);
+  height: 15px;
+  width: 15px;
+  left: 18px;
+  top: 15px;
+}
+.room-about__price {
+  display: block;
+  padding-top: 15px;
+}
+.room-description {
+  padding: 0 20px;
+}
+.room-description__title {
+  font-family: 'PT serif', serif;
+  font-size: 26px;
+  text-align: left;
+  padding-top: 50px;
+}
+.room-description__text {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
+  text-align: left;
+  padding-top: 30px;
+}
+.room-description__features-list {
+  text-align: left;
+  padding-top: 27px;
+}
+.room-description__features-paid {
+  text-align: left;
+  padding-top: 27px;
+}
+.room-description__features-item {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
+}
+.room-description__features-item b {
+  color: #ff7435;
+}
+.recommendat {
+  background-color: #f6f6f6;
+  padding: 50px 0;
+}
+.recommendat__item {
+  margin: 0 20px 20px 20px;
+  border: 1px solid #e3e3e3;
+}
+.recommendat__item:last-child {
+  margin-bottom: 0;
+}
+.recommendat__item-img {
+  text-align: center;
+}
+.recommendat__item-img img {
+  width: 100%;
+}
+.recommendat__item-info {
+  background-color: #fff;
+  text-align: center;
+}
+.recommendat__item-name {
+  padding-top: 40px;
+  display: block;
+  font-family: 'PT serif', serif;
+  font-size: 26px;
+}
+.recommendat__item-price {
+  padding-bottom: 50px;
+  display: block;
+  font-size: 14px;
+  font-family: 'Fira Sans', sans-serif;
+}
+.recommendat__item-price b {
+  color: #ff7435;
+  font-size: 18px;
+  font-family: 'Fira Sans', sans-serif;
+}
 @media (min-width: 768px) {
   .parent__child {
     float: left;
@@ -559,7 +721,6 @@ a:active {
     list-style: none;
   }
   .main-nav li {
-    list-style: list-item;
     text-align: center;
     border-bottom: 1px solid #ebebeb;
     border-left: 1px solid #ebebeb;

@@ -32,31 +32,35 @@
 		font-family: @firasans;
 		font-size: 16px;
 	}
-	// &__slider .slick-dots-rest-switcher li {
-	// 	position: relative;
- //    	display: inline-block;
- //    	width: 20px;
- //    	height: 20px;
- //    	margin: 0 7px;
- //    	padding: 0;
- //    	cursor: pointer;
-	// }
-	// &__slider .slick-dots-rest-switcher li button:before {
-	// 	font-family: 'slick';
- //    	font-size: 15px;
- //    	line-height: 20px;
- //    	padding-top: 10px;
- //    	position: absolute;
- //    	top: 15;
- //    	left: 0;
- //    	width: 15px;
- //    	height: 15px;
- //    	content: '';
- //    	border: 2px solid #ff7435;
- //    	border-radius: 8px;
-	// }
-	// &__slider .slick-dots-rest-switcher li.slick-active button:before {
-	// 	background-color: #ff7435;
-	// }
+	&__slider .slick-dots li {
+		display: inline-block;
+		padding-top: 20px;
+	}
+	&__slider .slick-dots .slick-btn {
+		position: relative;
+    	display: inline-block;
+    	width: 20px;
+    	height: 20px;
+    	margin: 0 7px;
+    	padding: 0;
+    	cursor: pointer;
+	}
+	&__slider .slick-dots .slick-btn:before {
+		font-family: 'slick';
+    	font-size: 15px;
+    	line-height: 20px;
+    	padding-top: 10px;
+    	position: absolute;
+    	top: 15;
+    	left: 0;
+    	width: 15px;
+    	height: 15px;
+    	content: '';
+    	border: 2px solid #ff7435;
+    	border-radius: 8px;
+	}
+	&__slider .slick-dots li.slick-active span:before {
+		background-color: #ff7435;
+	}
 }
 
