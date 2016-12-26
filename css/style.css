@@ -61,12 +61,25 @@ a:active {
 .page-header__main-logo {
   border: 1px solid #ebebeb;
   padding: 15px 0 22px 0;
+  text-align: center;
 }
 .page-header__burger {
   position: absolute;
   display: inline-block;
   right: 22px;
   top: 29px;
+}
+.page-header__main-nav {
+  display: none;
+}
+.page-header__contacts {
+  display: none;
+  margin-left: 115px;
+  padding-top: 27px;
+}
+.page-header__btn-order {
+  display: none;
+  float: right;
 }
 .main-nav__burger {
   display: inline-block;
@@ -81,6 +94,23 @@ a:active {
   background-color: #ff7435;
   margin-bottom: 4px;
   display: block;
+}
+.main-nav ul {
+  list-style: none;
+}
+.main-nav li {
+  text-align: center;
+  border-bottom: 1px solid #ebebeb;
+  border-left: 1px solid #ebebeb;
+  border-right: 1px solid #ebebeb;
+}
+.main-nav a {
+  display: inline-block;
+  padding: 19px 0;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  font-family: 'Fira Sans', sans-serif;
 }
 .main-logo {
   text-decoration: none;
@@ -203,6 +233,9 @@ a:active {
   font-family: 'Fira Sans', sans-serif;
   font-size: 16px;
   font-weight: normal;
+}
+.rest-options__list {
+  display: none;
 }
 .gallery {
   padding-bottom: 25px;
@@ -701,43 +734,163 @@ a:active {
   font-size: 18px;
   font-family: 'Fira Sans', sans-serif;
 }
+@media screen and (min-width: 420px) {
+  .rest-switcher__item {
+    background: url(../img/bannerPhoto768.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 17px 17px 140px 17px;
+  }
+  .rest-switcher__item-inner {
+    text-align: left;
+    display: inline;
+    padding: 0;
+    background-color: transparent;
+  }
+  .rest-switcher__item-title {
+    display: inline;
+    background-color: #fff;
+    opacity: 0.9;
+    padding: 0;
+    font-family: 'PT serif', serif;
+    font-size: 36px;
+  }
+  .rest-switcher__text {
+    display: inline;
+    background-color: #fff;
+    opacity: 0.9;
+  }
+  .rest-options {
+    padding: 40px 50px 100px 50px;
+  }
+  .rest-options__list {
+    display: inline-block;
+    list-style: none;
+    padding-top: 40px;
+  }
+  .rest-options__item {
+    display: inline-block;
+  }
+  .rest-options__text {
+    display: inline-block;
+    width: 100px;
+    vertical-align: top;
+    margin-top: 95px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 14px;
+    position: relative;
+  }
+  .rest-options__text:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 80px;
+    top: -81px;
+    left: 11px;
+  }
+  .rest-options__text--pool:before {
+    background: url(../img/Sl.jpg);
+    background-repeat: no-repeat;
+  }
+  .rest-options__text--sp:before {
+    background: url(../img/footbal.jpg);
+    background-repeat: no-repeat;
+  }
+  .rest-options__text--bil:before {
+    background: url(../img/bil.jpg);
+    background-repeat: no-repeat;
+  }
+  .rest-options__text--spa:before {
+    background: url(../img/spa.jpg);
+    background-repeat: no-repeat;
+  }
+  .rest-options__text--sauna:before {
+    background: url(../img/sauna.jpg);
+    background-repeat: no-repeat;
+  }
+  .rest-options__text--anim:before {
+    background: url(../img/anim.jpg);
+    background-repeat: no-repeat;
+  }
+}
 @media (min-width: 768px) {
   .parent__child {
     float: left;
     width: 25%;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (min-width: 1200px) {
+  .page-header {
+    text-align: left;
+    padding: 13px 0 23px 0;
+  }
+  .page-header__inner {
+    display: inline-block;
+  }
+  .page-header__main-logo {
+    display: inline-block;
+    border: none;
+    float: left;
+    margin-left: 110px;
+    padding: 0;
+  }
   .page-header__main-nav {
-    display: none;
+    display: inline-block;
+    margin-left: 32px;
+    padding-top: 17px;
+  }
+  .page-header__main-nav a {
+    padding: 0 8px;
+  }
+  .page-header__main-nav a:hover {
+    color: #ff7435;
   }
   .page-header__contacts {
-    display: none;
+    display: inline-block;
+    padding: 0;
+    float: right;
   }
-  .page-header__btn {
-    display: none;
+  .page-header__btn-order {
+    display: inline-block;
+    float: right;
   }
-  .main-nav ul {
-    list-style: none;
+  .page-header__btn-order a {
+    background-color: #ff7435;
+    padding: 13px 18px 13px 40px;
+    border-radius: 22px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    width: 180px;
+    margin: 0 20px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 14px;
+    position: relative;
+  }
+  .page-header__btn-order a:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: url(../img/IC_Calendar.png);
+    height: 15px;
+    width: 15px;
+    left: 18px;
+    top: 15px;
+  }
+  .page-header__burger {
+    display: none;
   }
   .main-nav li {
-    text-align: center;
-    border-bottom: 1px solid #ebebeb;
-    border-left: 1px solid #ebebeb;
-    border-right: 1px solid #ebebeb;
-  }
-  .main-nav a {
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
     display: inline-block;
-    padding: 19px 0;
-    text-decoration: none;
-    color: #000;
-    font-size: 14px;
-    font-family: 'Fira Sans', sans-serif;
   }
+}
+@media screen and (max-width: 420px) {
   .btn--dispnone {
-    display: none;
-  }
-  .rest-options__list {
     display: none;
   }
   .page-footer__address {

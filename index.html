@@ -5,23 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Green Valley</title>
-  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700,700i|PT+Sans:400,400i,700,700i|PT+Serif:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i|PT+Serif:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link href=»//code.cdn.mozilla.net/fonts/fira.css» rel= «stylesheet» type= «text/css» />
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="libs/jquery-3.1.0.min.js"></script>
-  <script src="libs/jquery-migrate-1.4.1.min.js"></script>
-  <script src="js/script-main.js"></script>
 </head>
 <body>
 
-  
   <header class="page-header">
     <div class="page-header__inner">
       <div class="page-header__main-logo">
         <a href="#" class="main-logo">
-          <p class="main-logo__text main-logo__text--left">GREEN</p>
-          <img src="img/mainLogo.png" alt="">
-          <p class="main-logo__text main-logo__text--right">VALLEY</p>
+          <img src="img/LOGO.png" alt="">
         </a>
       </div>
       <div class="page-header__burger" id="toggler-init">
@@ -52,12 +47,12 @@
           </ul>
         </nav>
       </div>
-      <div class="page-header__contacts">
-        <a href="#" class="page-header__phone-link">+7 812 777-55-88</a>
-        <span class="page-header__address">г. Санкт-Петербург, Приморское ш.600</span>
-      </div>
-      <div class="page-header__btn">
+      <div class="page-header__btn-order">
         <a href="#booking-form" class="btn btn--dispnone btn--bg-orange btn--ikon-calendar">ЗАБРОНИРОВАТЬ</a>
+      </div>
+      <div class="page-header__contacts">
+        <a href="#" class="page-header__phone-link">+7 812 777-55-88</a> <br>
+        <span class="page-header__address">г. Санкт-Петербург, Приморское ш.600</span>
       </div>
 
     </div>
@@ -68,8 +63,8 @@
       <div class="rest-switcher__slider">
         <section id="tab1" class="rest-switcher__item rest-switcher__item--family is-active">
             <div class="rest-switcher__item-inner">
-              <h2 class="rest-switcher__item-title">Семейный отдых на  берегу Финского залива</h2>
-              <p class="rest-switcher__text">Green Valley - это современная база отдыха в курортном районе для здорового отдыха всей семёй.</p>
+              <h2 class="rest-switcher__item-title">Семейный отдых на берегу Финского залива</h2>
+              <p class="rest-switcher__text">Green Valley - это современная база отдыха в курортном районе для здорового отдыха всей семьёй.</p>
             </div>
         </section>
         <section id="tab2" class="rest-switcher__item rest-switcher__item--company">
@@ -92,29 +87,57 @@
       <p class="rest-options__description">Плавайте в бассейне, играйте в волейбол, футбол и другие игры. Устройте семейный пикник с шашлыками или снимите напряжение в бане или спа.</p>
       <ul class="rest-options__list">
         <li class="rest-options__item">
-          <span class="rest-options__text">БАССЕЙН</span>
+          <span class="rest-options__text rest-options__text--pool">БАССЕЙН</span>
         </li>
         <li class="rest-options__item">
-          <span class="rest-options__text">СПОРТИВНАЯ ПЛОЩАДКА</span>
+          <span class="rest-options__text rest-options__text--sp">СПОРТИВНАЯ ПЛОЩАДКА</span>
         </li>
         <li class="rest-options__item">
-          <span class="rest-options__text">БИЛЬЯРД</span>
+          <span class="rest-options__text rest-options__text--bil">БИЛЬЯРД</span>
         </li>
         <li class="rest-options__item">
-          <span class="rest-options__text">СПА</span>
+          <span class="rest-options__text rest-options__text--spa">СПА</span>
         </li>
         <li class="rest-options__item">
-          <span class="rest-options__text">БАНИ</span>
+          <span class="rest-options__text rest-options__text--sauna">БАНИ</span>
         </li>
         <li class="rest-options__item">
-          <span class="rest-options__text">АНИМАЦИЯ</span>
+          <span class="rest-options__text rest-options__text--anim">АНИМАЦИЯ</span>
         </li>
       </ul>
     </div>
   </section>
-
+  
   <div class="gallery">
-    <img src="img/galleryPhoto.jpg" alt="galleryPhoto1">
+  <section class="slider-for slider">
+    <div>
+      <img src="img/roomList/catalog-item__eco.png">
+    </div>
+    <div>
+      <img src="img/roomList/catalog-item__st.png">
+    </div>
+    <div>
+      <img src="img/roomList/catalog-item__st-plus.png">
+    </div>
+    <div>
+      <img src="img/roomList/catalog-item__lux.png">
+    </div>
+  </section>
+
+  <section class="slider-nav slider">
+    <div>
+      <img src="img/roomList/catalog-item__eco.png">
+    </div>
+    <div>
+      <img src="img/roomList/catalog-item__st.png">
+    </div>
+    <div>
+      <img src="img/roomList/catalog-item__st-plus.png">
+    </div>
+    <div>
+      <img src="img/roomList/catalog-item__lux.png">
+    </div>
+  </section>
   </div>
 
   <section class="reviews">
@@ -237,6 +260,7 @@
   </footer>
 
   <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="libs/jquery-migrate-1.4.1.min.js"></script>
   <script src="libs/slick.js"></script>
   <script src="js/script-main.js"></script>
 

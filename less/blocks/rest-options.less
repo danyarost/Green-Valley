@@ -19,10 +19,62 @@
 		font-size: 16px;
 		font-weight: normal;
 	}
+	&__list {
+		display: none;
+	}
 
-	@media screen and (max-width: 420px) {
+	@media screen and (min-width: 420px) {
+		padding: 40px 50px 100px 50px;
+
 		&__list {
-			display: none;
+			display: inline-block;
+			list-style: none;
+			padding-top: 40px;
+		}
+		&__item {
+			display: inline-block;
+		}
+		&__text {
+			display: inline-block;
+			width: 100px;
+			vertical-align: top;
+			margin-top: 95px;
+			font-family: @firasans;
+			font-size: 14px;
+			position: relative;	
+		}
+		&__text:before {
+			content: '';
+			position: absolute;
+			display: block;
+			width: 80px;
+			height: 80px;
+    		top: -81px;
+    		left: 11px;
+		}
+		&__text--pool:before {
+			background: url(../img/Sl.jpg);
+			background-repeat: no-repeat;
+		}
+		&__text--sp:before {
+			background: url(../img/footbal.jpg);
+			background-repeat: no-repeat;
+		}
+		&__text--bil:before {
+			background: url(../img/bil.jpg);
+			background-repeat: no-repeat;
+		}
+		&__text--spa:before {
+			background: url(../img/spa.jpg);
+			background-repeat: no-repeat;
+		}
+		&__text--sauna:before {
+			background: url(../img/sauna.jpg);
+			background-repeat: no-repeat;
+		}
+		&__text--anim:before {
+			background: url(../img/anim.jpg);
+			background-repeat: no-repeat;
 		}
 	}
 

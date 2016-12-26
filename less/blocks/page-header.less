@@ -10,6 +10,7 @@
   &__main-logo {
     border: 1px solid #ebebeb;
     padding: 15px 0 22px 0;
+    text-align: center;
   }
   &__burger {
     position: absolute;
@@ -17,22 +18,86 @@
     right: 22px;
     top: 29px;
   }
+  &__main-nav {
+    display: none;
+  }
+  &__contacts {
+      display: none;
+      margin-left: 115px;
+      padding-top: 27px;
+  }
+  &__btn-order {
+      display: none;
+      float: right;
+  }
+  &__phone-link {
+  }
+  &__address {
+  }
+
+  @media screen and (min-width: 420px) {
+    
+  }
   
-	@media screen and (max-width: 420px) {
+	@media screen and (min-width: 1200px) {
+    text-align: left;
+    padding: 13px 0 23px 0;
 
+    &__inner {
+      display: inline-block;
+    }
+    &__main-logo {
+      display: inline-block;
+      border: none;
+      float: left;
+      margin-left: 110px;
+      padding: 0;
+    }
     &__main-nav {
-      display: none;
+    display: inline-block;
+    margin-left: 32px;
+    padding-top: 17px;
     }
-  }
-  @media screen and (max-width: 420px) {
-
+    &__main-nav a {
+      padding: 0 8px;
+    }
+    &__main-nav a:hover {
+      color: @orange;
+    }
     &__contacts {
-      display: none;
+      display: inline-block;
+      padding: 0;
+      float: right;
     }
-  }
-  @media screen and (max-width: 420px) {
-
-    &__btn {
+    &__btn-order {
+      display: inline-block;
+      float: right;
+    }
+    &__btn-order a {
+      display: inline-block;
+      background-color: @orange;
+      padding: 13px 18px 13px 40px;
+      border-radius: 22px;
+      text-decoration: none;
+      color: #fff;
+      display: inline-block;
+      width: 180px;
+      margin: 0 20px;
+      font-family: @firasans;
+      font-size: 14px;
+      position: relative;
+    }
+    &__btn-order a:before {
+      content: '';
+      display: block;
+      position: absolute;
+      background: url(../img/IC_Calendar.png);
+      height: 15px;
+      width: 15px;
+      left: 18px;
+      top: 15px;
+    }
+    &__burger {
       display: none;
     }
   }
