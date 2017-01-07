@@ -1,25 +1,34 @@
 .room-description {
 	padding: 0 20px;
+	text-align: left;
 
 	&__title {
 		font-family: @ptserif;
 		font-size: 26px;
 		text-align: left;
-		padding-top: 50px;
+		margin-top: 50px;
+		font-weight: normal;
 	}
 	&__text {
 		font-family: @firasans;
 		font-size: 16px;
 		text-align: left;
-		padding-top: 30px;
+		margin-top: 30px;
 	}
 	&__features-list {
 		text-align: left;
-		padding-top: 27px;
+		margin-top: 18px;
+	}
+	&__features-list br {
+		display: block;
+	}
+	&__features-box {
+		display: inline-block;
+		vertical-align: top;
 	}
 	&__features-paid {
 		text-align: left;
-		padding-top: 27px;
+		margin-top: 19px;
 	}
 	&__features-item {
 		font-family: @firasans;
@@ -27,5 +36,29 @@
 	}
 	&__features-item b {
 		color: @orange;
+	}
+
+	@media screen and (min-width:768px) {
+
+		&__title {
+			margin-top: 0;
+		}
+		&__title:nth-child(3) {
+			margin-top: 46px;
+		}
+		&__title:nth-child(5) {
+			margin-top: 23px;
+		}
+		&__text {
+			margin-top: 18px;
+			display: inline-block;
+    		width: 540px;
+		}
+		&__features-list br {
+			display: none;
+		}
+		&__features-box {
+			width: 294px;
+		}
 	}
 }

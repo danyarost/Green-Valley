@@ -1,12 +1,14 @@
 .shares {
-	padding: 25px 0 0 0;
+	padding: 33px 0 0 0;
 	text-align: center;
 
 	&__title {
 		font-family: @ptserif;
 		font-size: 26px;
-		padding: 0 50px 40px 50px;
 		font-weight: normal;
+	}
+	&__slider {
+		margin-top: 23px;
 	}
 	&__slide {
 		background: url(../img/shresSlide.png);
@@ -19,8 +21,8 @@
 		display: inline-block;
 		background-color: white;
 		width: 295px;
-		margin: 157px 23px 23px 0;
-		padding: 20px;
+		margin: 166px 23px 23px 0;
+    	padding: 14px 19px 9px 19px;
 		opacity: 0.9;
 	}
 	&__slide-title {
@@ -52,15 +54,29 @@
     	padding-top: 10px;
     	position: absolute;
     	top: 15;
-    	left: 0;
-    	width: 15px;
-    	height: 15px;
+    	left: -15px;
+    	width: 14px;
+    	height: 2px;
     	content: '';
     	border: 2px solid #ff7435;
-    	border-radius: 8px;
+    	border-radius: 15px;
 	}
 	&__slider .slick-dots li.slick-active span:before {
 		background-color: #ff7435;
+	}
+
+	@media screen and (min-width: 420px) {
+		
+		&__slide {
+			background: url(../img/sharesBgr768.png) no-repeat center;
+		}
+		&__title br {
+			display: none;
+		}
+		&__title {
+			font-size: 31px;
+    		letter-spacing: 2px;
+		}
 	}
 }
 

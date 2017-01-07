@@ -1,20 +1,35 @@
 .promo {
-	background: url(../img/roomList/promoBgr.png);
+	background: url(../img/roomList/promoBgr768.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	text-align: center;
+	padding-bottom: 44px;
 	
 	&__title {
 		font-family: @ptserif;
 		color: #fff;
 		font-size: 30px;
-		padding: 65px 20px;
+		padding-top: 65px;
+		font-weight: normal;
 	}
 	&__text {
 		display: none;
+		margin-top: 29px;
+    	font-size: 15px;
+    	font-family: @firasans;
+    	color: white;
+    	letter-spacing: 1.7px;
 	}
 
 	@media screen and (min-width: 420px) {
-
+		
+		&__text {
+			display: block;
+		}
+		&__title {
+			font-size: 36px;
+			padding-top: 36px;
+			letter-spacing: 2px;
+		}
 	}
 }

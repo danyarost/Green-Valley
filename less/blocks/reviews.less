@@ -1,5 +1,4 @@
 .reviews {
-	margin: 25px 0 25px 0;
 	background: url(../img/reviewsBgr.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -10,7 +9,7 @@
 		font-family: @ptserif;
 		font-size: 26px;
 		font-weight: normal;
-		padding: 66px 0 52px 0;
+		padding: 66px 0 42px 0;
 	}
 	&__slider {
 		display: inline-block;
@@ -32,11 +31,18 @@
 		position: relative;
     	top: -18px;
 	}
-	&__social-link {
-		background: url(../../img/vk.png);
+	&__social-link--vk {
+		background: url(../img/vk.png);
 		background-repeat: no-repeat;
 		width: 22px;
 		height: 13px;
+		display: inline-block;
+	}
+	&__social-link--fb {
+		background: url(../img/fb.png);
+		background-repeat: no-repeat;
+		width: 18px;
+		height: 18px;
 		display: inline-block;
 	}
 	&__bq {
@@ -63,5 +69,22 @@
 		border: 2px solid white;
 		padding: 10px 25px;
 		border-radius: 18px;
+	}
+	&__item-box:nth-child(2) {
+		display: none;
+	}
+
+	@media screen and (min-width: 420px) {
+
+		&__slider {
+			width: 480px;
+		}
+		&__item-box:nth-child(2) {
+			display: inline-block;
+			margin-top: 55px;
+		}
+		&__title {
+			font-size: 30px;
+		}
 	}
 }

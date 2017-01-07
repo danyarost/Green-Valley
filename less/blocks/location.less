@@ -1,15 +1,16 @@
 .location {
-	padding-top: 35px;
+	margin-top: 31px;
 	text-align: center;
 
 	&__title {
 		font-family: @ptserif;
 		font-size: 26px;
-		padding: 0 80px 40px 80px;
 		font-weight: normal;
+		letter-spacing: 2px;
 	}
 	&__map {
 		text-align: left;
+		margin-top: 32px;
 	}
 	&__map iframe {
 		height: 400px;
@@ -17,6 +18,13 @@
 		display: inline-block;
 	}
 	&__transport {
-		padding: 40px 0 90px 0;
+		margin-top: 33px;
+	}
+
+	@media screen and (min-width:420px) {
+
+		&__title {
+			font-size: 30px;
+		}
 	}
 }

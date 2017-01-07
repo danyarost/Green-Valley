@@ -5,12 +5,15 @@
 	}
 	&__electro {
 		position: relative;
-		margin-top: 40px;
+		text-align: center;
 	}
 	&__title {
 		font-family: @firasans;
 		font-size: 14px;
-		padding: 50px 0 20px 0;
+		margin-top: 80px;
+	}
+	&__electro &__title {
+		margin-top: 61px;
 	}
 	&__title--ikon-bus:before {
 		content: '';
@@ -20,7 +23,7 @@
 		background: url(../img/homeSpritesheet.png) -37px 30px;
     	width: 50px;
     	height: 25px;
-    	top: 5px;
+    	top: -42px;
     	left: 0;
     	right: 0;
     	margin: auto;
@@ -33,15 +36,24 @@
 		background: url(../img/homeSpritesheet.png) 64px -4px;
     	width: 60px;
     	height: 26px;
-    	top: 5px;
+    	top: -42px;
     	left: 0;
     	right: 0;
     	margin: auto;
 	}
 	&__text {
+		margin-top: 10px;
 		padding: 0 46px;
 		font-family: @firasans;
 		font-size: 16px;
+		text-align: center;
+		display: inline-block;
 	}
 	
+	@media screen and (min-width: 420px) {
+	
+		&__text--second {
+			width: 425px;
+		}
+	}
 }
